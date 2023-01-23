@@ -1,17 +1,20 @@
+import math
+import os
+import random
+import re
+import sys
+import numpy as np
+import pandas as pd
 import itertools
 
 def word_number(word):
-    # Generar todas las permutaciones de la palabra
     permutations = list(itertools.permutations(word))
-    # Ordenar las permutaciones alfabéticamente
     permutations.sort()
-    # Encontrar la posición de la palabra dada en la lista de permutaciones ordenadas
     position = permutations.index(tuple(word))
-    # Devolver el número correspondiente a esa posición
     return position + 1
 
-print(word_number("ABAB")) # 2
-print(word_number("AAAB")) # 1
-print(word_number("BAAA")) # 4
-print(word_number("PREGUNTA")) # 24572
-print(word_number("CONTADOR"))# 10743
+print(word_number("ABAB"))
+print(word_number("AAAB")) 
+print(word_number("BAAA")) 
+print(word_number("PREGUNTA")) 
+print(word_number("CONTADOR"))
