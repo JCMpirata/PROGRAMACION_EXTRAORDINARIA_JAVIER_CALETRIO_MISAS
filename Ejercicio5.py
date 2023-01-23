@@ -20,7 +20,7 @@ def decrypt_vigenere(cifrado, longitud_clave):
     
     blocks = [cifrado[i:i+key_length] for i in range(0, len(cifrado), key_length)]
     
-    # Paso 4: aplique el cifrado César a cada bloque para descifrar el texto original
+   
     key = ""
     for block in blocks:
         frequency = {}
